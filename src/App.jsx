@@ -1,26 +1,14 @@
-import { useState } from "react";
+import Card from './components/Card'
 
 function App() {
 
-  let [counter, setCounter] = useState(0)
-
-  const addValue = () => {
-    setCounter(counter + 1);
-  }
-
-  const removeValue = () => {
-    setCounter(counter - 1);
-  }
-
   return (
     <>
-        <h2>Counter Test</h2>
-        <h4>Counter Value: {counter}</h4>
-        <button onClick={addValue}>Add Value</button>
-        <br /><br />
-        <button onClick={removeValue}>Remove Value</button>
+      <h1 className="text-black bg-green-400 p-4 rounded-xl mb-4">Hello world!</h1>
+      <Card username="Sujoy Sen" />
+      <Card />
     </>
-  )
+  );
 }
 
-export default App
+export default App; 
